@@ -1,6 +1,4 @@
-# Swagger, um framework de documentação, então poderá ser acessado pelo link:
-
-bionexoCase
+# bionexoCase
 
 
 Realizei o case utilizando o framework spring boot.
