@@ -23,8 +23,8 @@ public class UbsService {
 	public void insertUbs(String lat, String log) throws IOException {
 		List<Ubs> ubsListString = OpenCsv.buscaCsv(); 
 		for (Ubs ubs : ubsListString) {
-			if(ubs.getVlr_latitude() == Long.parseLong(lat)) {
-				if(ubs.getVlr_longitude() == Long.parseLong(log))
+			if(ubs.getVlr_latitude().contentEquals(lat)) {
+				if(ubs.getVlr_longitude().contentEquals(log))
 				ubsRepository.save(ubs);
 			}
 
